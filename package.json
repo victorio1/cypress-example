@@ -1,0 +1,27 @@
+{
+  "name": "victorio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "coverage": "nyc --reporter=lcov --reporter=text mocha cypress/integration/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@cypress/code-coverage": "^3.9.2",
+    "babel-plugin-istanbul": "^6.0.0",
+    "cypress": "^6.2.1",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
